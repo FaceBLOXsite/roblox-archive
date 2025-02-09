@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roblox Archive - In Development</title>
+    <title>Roblox Archive</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         .music-button {
@@ -30,6 +30,28 @@
             50% { transform: scale(1.05); }
             100% { transform: scale(1); }
         }
+
+        .nav-container {
+            margin-top: 20px;
+        }
+
+        .nav-button {
+            background: linear-gradient(90deg, #ff4500, #ff5733, #ff2200);
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 5px;
+        }
+
+        .nav-button:hover {
+            transform: scale(1.1);
+            background: linear-gradient(90deg, #ff2200, #ff5733, #ff4500);
+        }
     </style>
 </head>
 <body>
@@ -37,9 +59,16 @@
     <div class="error-container">
         <img src="roblox.png" alt="Roblox Character" class="error-image">
         <h1>Roblox Archive</h1>
-        <h2>Under Development</h2>
-        <p>The website is currently in development. Please check back later for updates.</p>
-        <p class="error-code">Status: Work in Progress</p>
+        <h2>Explore Different Archives</h2>
+        <p>Welcome to the Roblox Archive. Choose a category to explore past experiences.</p>
+        
+        <div class="nav-container">
+            <button class="nav-button" onclick="location.href='classic-games.html'">Classic Games</button>
+            <button class="nav-button" onclick="location.href='old-avatars.html'">Old Avatars</button>
+            <button class="nav-button" onclick="location.href='events.html'">Past Events</button>
+            <button class="nav-button" onclick="location.href='items.html'">Archived Items</button>
+        </div>
+        
         <button id="music-button" class="music-button">Play Music</button>
     </div>
     <audio id="background-music" loop>
