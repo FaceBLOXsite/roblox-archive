@@ -1,3 +1,4 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -7,6 +8,7 @@ body {
     background: black;
 }
 
+/* Animated Background */
 .background-animation {
     position: fixed;
     width: 100%;
@@ -23,34 +25,37 @@ body {
     100% { background-position: 0% 50%; }
 }
 
+/* Archive Container */
 .error-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0.85);
-    padding: 25px;
+    padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(255, 69, 0, 0.6);
     color: white;
     border: 2px solid #ff2200;
 }
 
+/* Archive Image */
 .error-image {
     width: 120px;
     margin-bottom: 15px;
 }
 
+/* Text Styling */
 h1 {
-    font-size: 30px;
+    font-size: 32px;
     color: #ffcc00;
-    text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.7);
+    text-shadow: 3px 3px 5px rgba(255, 204, 0, 0.7);
 }
 
 h2 {
     font-size: 24px;
     color: #ff5733;
-    text-shadow: 2px 2px 5px rgba(255, 87, 51, 0.7);
+    text-shadow: 3px 3px 5px rgba(255, 87, 51, 0.7);
 }
 
 p {
@@ -58,18 +63,37 @@ p {
     font-size: 16px;
 }
 
-.error-code {
-    color: #ff2200;
-    font-size: 14px;
-    margin-top: 10px;
-    font-weight: bold;
+/* Navigation Buttons */
+.nav-container {
+    margin-top: 20px;
 }
 
+.nav-button {
+    background: linear-gradient(90deg, #ff4500, #ff5733, #ff2200);
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(255, 87, 51, 0.4);
+}
+
+.nav-button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(90deg, #ff2200, #ff5733, #ff4500);
+    box-shadow: 0 6px 12px rgba(255, 87, 51, 0.5);
+}
+
+/* Music Button */
 .music-button {
     background: linear-gradient(90deg, #ff4500, #ff5733, #ff2200);
     border: none;
     color: white;
-    padding: 12px 30px;
+    padding: 14px 35px;
     font-size: 18px;
     font-weight: bold;
     border-radius: 50px;
@@ -77,6 +101,7 @@ p {
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(255, 87, 51, 0.3);
     animation: pulse 1.5s infinite;
+    margin-top: 20px;
 }
 
 .music-button:hover {
